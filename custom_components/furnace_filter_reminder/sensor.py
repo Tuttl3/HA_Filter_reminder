@@ -1,34 +1,28 @@
-from homeassistant.components.sensor import SensorEntity
-from homeassistant.const import CONF_HOURS
-from homeassistant.core import HomeAssistant
-import datetime
+from homeassistant.helpers.entity import Entity
 
-DOMAIN = "furnace_filter_reminder"
+class FurnaceFilterSensor(Entity):
+    def __init__(self, name, hours):
+        self._name = name
+        self._threshold_hours = hours
+        self._runtime = 0
 
-class FurnaceFilterSensor(SensorEntity):
-    def __init__(self, hass: HomeAssistant, config):
-        self.hass = hass
-        self.name = config.get("name", "Furnace Filter Runtime")
-        self.threshold_hours = config.get(CONF_HOURS, 300)
-        self.runtime = 0
-        self.last_reset = datetime.datetime.now()
+    @property
+    def name(self):
+        return self._name
 
     @property
     def state(self):
-        return max(0, self.threshold_hours - self.runtime)
+        return max(0, self._threshold_hours - self._runtime)
 
     @property
     def extra_state_attributes(self):
         return {
-            "runtime_hours": self.runtime,
-            "threshold_hours": self.threshold_hours,
-            "last_reset": self.last_reset,
+            "runtime_hours": self._runtime,
+            "threshold_hours": self._threshold_hours,
         }
 
     def increment_runtime(self, hours):
-        self.runtime += hours
-        self.hass.states.set(self.entity_id, self.state)
+        self._runtime += hours
 
     def reset_runtime(self):
-        self.runtime = 0
-        self.last_reset = datetime.datetime.now()
+        self._runtime = 0
