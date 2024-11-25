@@ -1,0 +1,20 @@
+
+{
+  "title": "Furnace Filter Reminder",
+  "step": {
+    "user": {
+      "title": "Configure Furnace Filter Reminder",
+      "description": "Set up runtime tracking for your furnace filter.",
+      "data": {
+        "name": "Name of the Reminder",
+        "hours": "Hours until reminder"
+      }
+    }
+  },
+  "options": {
+    "init": {
+      "title": "Adjust Settings",
+      "description": "Modify runtime threshold or other settings."
+    }
+  }
+}

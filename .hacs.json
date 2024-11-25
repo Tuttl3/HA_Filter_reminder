@@ -1,0 +1,7 @@
+{
+  "name": "Furnace Filter Reminder",
+  "hide_default_branch": false,
+  "domains": ["furnace_filter_reminder"],
+  "country": ["US", "CA"],
+  "iot_class": "local_polling"
+}

@@ -2,9 +2,10 @@
   "domain": "furnace_filter_reminder",
   "name": "Furnace Filter Reminder",
   "version": "1.0.0",
-  "documentation": " ",
+  "documentation": "https://github.com/Tuttl3/furnace_filter_reminder",
   "dependencies": [],
   "codeowners": ["@Tuttl3"],
-  "requirements": []
-  "config_flow": true
+  "requirements": [],
+  "config_flow": true,
+  "iot_class": "local_polling"
 }

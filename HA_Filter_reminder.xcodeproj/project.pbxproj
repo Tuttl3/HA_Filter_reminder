@@ -8,10 +8,21 @@
 
 /* Begin PBXFileReference section */
 		553336F62CF51654007DDC01 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		553337022CF51BAE007DDC01 /* .hacs.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = .hacs.json; sourceTree = "<group>"; };
 		55ED8C752CF50F7B0067E1CF /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
+		553337002CF51AF3007DDC01 /* .translations */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = .translations;
+			sourceTree = "<group>";
+		};
+		553337032CF51BDD007DDC01 /* .github */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = .github;
+			sourceTree = "<group>";
+		};
 		55ED8C6C2CF4CA190067E1CF /* custom_components */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = custom_components;
@@ -23,9 +34,12 @@
 		55ED8C632CF4C5F10067E1CF = {
 			isa = PBXGroup;
 			children = (
+				553337022CF51BAE007DDC01 /* .hacs.json */,
 				553336F62CF51654007DDC01 /* LICENSE */,
+				553337032CF51BDD007DDC01 /* .github */,
 				55ED8C6C2CF4CA190067E1CF /* custom_components */,
 				55ED8C752CF50F7B0067E1CF /* README.md */,
+				553337002CF51AF3007DDC01 /* .translations */,
 			);
 			sourceTree = "<group>";
 		};

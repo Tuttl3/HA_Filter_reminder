@@ -1,0 +1,21 @@
+name: "Validate HACS"
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Validate HACS
+        run: |
+          mkdir temp && cd temp
+          wget -q https://raw.githubusercontent.com/hacs/integration/main/scripts/hacs_validator.sh
+          bash hacs_validator.sh ../custom_components/furnace_filter_reminder
