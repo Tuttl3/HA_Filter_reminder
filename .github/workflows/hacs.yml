@@ -11,14 +11,16 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: Checkout Repository
         uses: actions/checkout@v3
 
-      - name: Make Validator Executable
-        run: chmod +x hacs_validator.sh
+      - name: Download HACS Validator Script
+        run: |
+          mkdir -p temp && cd temp
+          wget -q https://raw.githubusercontent.com/hacs/integration/main/scripts/hacs_validator.sh || { echo "Failed to download hacs_validator.sh"; exit 1; }
+          chmod +x hacs_validator.sh
 
       - name: Validate HACS Integration
         run: |
-          mkdir temp && cd temp
-          wget -q https://raw.githubusercontent.com/hacs/integration/main/scripts/hacs_validator.sh
+          cd temp
           bash hacs_validator.sh ../custom_components/furnace_filter_reminder
