@@ -1,0 +1,9 @@
+{
+  "domain": "furnace_filter_reminder",
+  "name": "Furnace Filter Reminder",
+  "version": "1.0.0",
+  "documentation": "https://example.com",
+  "dependencies": [],
+  "codeowners": ["@yourgithub"],
+  "requirements": []
+}

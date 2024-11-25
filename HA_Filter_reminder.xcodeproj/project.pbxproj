@@ -1,0 +1,79 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		55ED8C6C2CF4CA190067E1CF /* custom_components */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = custom_components;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXGroup section */
+		55ED8C632CF4C5F10067E1CF = {
+			isa = PBXGroup;
+			children = (
+				55ED8C6C2CF4CA190067E1CF /* custom_components */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXProject section */
+		55ED8C642CF4C5F10067E1CF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1610;
+			};
+			buildConfigurationList = 55ED8C672CF4C5F10067E1CF /* Build configuration list for PBXProject "HA_Filter_reminder" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 55ED8C632CF4C5F10067E1CF;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+			);
+		};
+/* End PBXProject section */
+
+/* Begin XCBuildConfiguration section */
+		55ED8C682CF4C5F10067E1CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		55ED8C692CF4C5F10067E1CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		55ED8C672CF4C5F10067E1CF /* Build configuration list for PBXProject "HA_Filter_reminder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				55ED8C682CF4C5F10067E1CF /* Debug */,
+				55ED8C692CF4C5F10067E1CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 55ED8C642CF4C5F10067E1CF /* Project object */;
+}
