@@ -1,0 +1,9 @@
+type: custom:button-card
+entity: sensor.furnace_filter_runtime
+name: Furnace Filter
+show_state: true
+tap_action:
+  action: call-service
+  service: furnace_filter_reminder.reset
+  service_data:
+    entity_id: sensor.furnace_filter_runtime
