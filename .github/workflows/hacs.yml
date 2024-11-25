@@ -14,7 +14,10 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
 
-      - name: Validate HACS
+      - name: Make Validator Executable
+        run: chmod +x hacs_validator.sh
+
+      - name: Validate HACS Integration
         run: |
           mkdir temp && cd temp
           wget -q https://raw.githubusercontent.com/hacs/integration/main/scripts/hacs_validator.sh
