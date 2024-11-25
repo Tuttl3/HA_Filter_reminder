@@ -22,7 +22,7 @@ A Home Assistant custom integration that tracks your furnace's runtime and remin
 ### Manual Installation
 1. Download this repository as a `.zip` file or clone it:
    ```bash
-   git clone https://github.com/yourusername/furnace_filter_reminder.git
+   git clone https://github.com/Tuttl3/furnace_filter_reminder.git
    ```
 2. Copy the `furnace_filter_reminder` folder into your Home Assistant `custom_components` directory. The path should look like this:
    ```
