@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXFileReference section */
+		553336F62CF51654007DDC01 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		55ED8C752CF50F7B0067E1CF /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -22,6 +23,7 @@
 		55ED8C632CF4C5F10067E1CF = {
 			isa = PBXGroup;
 			children = (
+				553336F62CF51654007DDC01 /* LICENSE */,
 				55ED8C6C2CF4CA190067E1CF /* custom_components */,
 				55ED8C752CF50F7B0067E1CF /* README.md */,
 			);
